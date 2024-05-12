@@ -1,12 +1,15 @@
 <script>
-	import { siteTitle } from '$lib/config';
-
-	export let data;
+	import MainInfo from '$lib/components/MainInfo.svelte'
+	import MainCarousel from '$lib/components/MainCarousel.svelte';
+	import MainAspects from '$lib/components/MainAspects.svelte';
+	import MainService from '$lib/components/MainService.svelte';
+	import MainReviews from '$lib/components/MainReviews.svelte';
+	import MainBlog from '$lib/components/MainBlog.svelte';
 </script>
 
-<svelte:head>
-	<title>{siteTitle}</title>
-</svelte:head>
-
-<!-- This is the README.md file in the root of the repo. It serves double duty as the homepage's content. If you'd rather use your own HTML and/or Svelte, you can delete/modify everything in this file. -->
-<svelte:component this={data.ReadMe} />
+<MainInfo/>
+<!-- <MainCarousel/> -->
+<MainAspects/>
+<MainService/>
+<MainReviews/>
+<MainBlog/>
