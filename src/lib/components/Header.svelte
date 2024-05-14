@@ -2,6 +2,8 @@
 	import { siteTitle } from '$lib/config'
 	import MainNav from './MainNav.svelte'
 	import * as Drawer from "$lib/components/ui/drawer";
+	import DrawerHeader from './ui/drawer/drawer-header.svelte';
+	import DrawerDescription from './ui/drawer/drawer-description.svelte';
 
 	const focusMain = () => {
 		const main = document.querySelector('main');
@@ -9,33 +11,42 @@
 	}
 </script>
 
-<header class="flex mr-12 pt-12 ml-12 items-center justify-between sticky top-0">
+<header class="flex bg-green-900 mr-12 pt-12 ml-12 items-center justify-between sticky top-0">
 
 <Drawer.Root direction="left">
-  <Drawer.Trigger>Меню</Drawer.Trigger>
+
+  <Drawer.Trigger class="flex items-center">
+		<img class="text-white h-11 xl:h-11 mr-6" src="/line.svg" alt="открыть меню навигации">
+		<span>Меню</span>
+	</Drawer.Trigger>
+
   <Drawer.Content>
-    <Drawer.Header>
+
+		<DrawerHeader>
+			<Drawer.Close class="flex items-center">
+				<img class="h-11 xl:h-11 mr-6" src="/cross.svg" alt="открыть меню навигации">
+				<span>Закрыть</span>
+			</Drawer.Close>
 			<Drawer.Close>
-			
-				<Drawer.Title>
 				<a on:click|preventDefault={focusMain} class="skip-to-content-link" href="#main">
 				</a>
-				<a href="/" class="text-5xl">
+				<a href="/" class="text-5xl pr-20">
 					{siteTitle}
 				</a>
-				</Drawer.Title>
-				<Drawer.Description>
-					<MainNav />
-				</Drawer.Description>
+			</Drawer.Close>
+		</DrawerHeader>
+
+		<DrawerDescription>
+		<Drawer.Close>
+			<MainNav />
 		</Drawer.Close>
-    </Drawer.Header>
-    <Drawer.Footer>
-      <Drawer.Close>Закрыть</Drawer.Close>
-    </Drawer.Footer>
+	</DrawerDescription>
+
   </Drawer.Content>
+
 </Drawer.Root>
 
-<a href="/" class="text-5xl">
+<a href="/" class="text-5xl text-white">
 	{siteTitle}
 </a>
 
