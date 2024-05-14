@@ -9,7 +9,7 @@
 	}
 </script>
 
-<header class="flex items-center justify-between sticky top-0">
+<header class="flex mr-12 pt-12 ml-12 items-center justify-between sticky top-0">
 
 <Drawer.Root direction="left">
   <Drawer.Trigger>Меню</Drawer.Trigger>
