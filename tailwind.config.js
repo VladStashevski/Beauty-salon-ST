@@ -14,6 +14,10 @@ const config = {
 			}
 		},
 		extend: {
+			width: {
+        'custom-info': 'min(800px, 90%)',
+				'custom-aspects': 'min(1300px,90%)',
+      },
 			colors: {
 				border: "hsl(var(--border) / <alpha-value>)",
 				greenMain: "#d1d9cd",

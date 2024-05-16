@@ -60,11 +60,18 @@
   }
   
   main {
-    width: 100%;
-    max-width: 42rem;
-    margin: 6rem auto;
-    padding: 0 1rem;
+    
   }
+
+  .blur-drawer {
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    pointer-events: none;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.4);
+	}
   
   .layout {
     display: grid;

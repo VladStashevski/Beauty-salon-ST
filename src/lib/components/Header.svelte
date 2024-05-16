@@ -11,7 +11,7 @@
 	}
 </script>
 
-<header class="z-10 flex bg-green-900 mr-12 pt-12 ml-12 items-center justify-between sticky top-0">
+<header class="z-50 flex bg-whihe pr-12 pt-12 pl-12 items-center justify-between sticky top-0">
 
 <Drawer.Root direction="left">
 

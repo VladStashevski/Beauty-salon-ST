@@ -7,9 +7,11 @@
 	import MainBlog from '$lib/components/MainBlog.svelte';
 </script>
 
+<section class="bg-auto bg-center h-screen	w-screen	" style="background-image: url('/images/backgr.webp');"
+></section>
 <MainInfo/>
 <!-- <MainCarousel/> -->
 <MainAspects/>
-<MainService/>
+<!-- <MainService/>
 <MainReviews/>
-<MainBlog/>
+<MainBlog/> -->
