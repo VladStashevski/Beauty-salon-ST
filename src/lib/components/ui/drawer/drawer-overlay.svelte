@@ -8,7 +8,7 @@
 
 <DrawerPrimitive.Overlay
 	bind:el
-	class={cn("fixed inset-0 z-50 backdrop-filter backdrop-blur-md bg-black/10", className)}
+	class={cn("fixed inset-0 z-50 border-1 border-greenMain backdrop-filter backdrop-blur-md bg-black/10", className)}
 	{...$$restProps}
 >
 	<slot />

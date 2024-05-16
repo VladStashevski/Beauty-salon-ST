@@ -11,7 +11,7 @@
 	}
 </script>
 
-<header class="flex bg-green-900 mr-12 pt-12 ml-12 items-center justify-between sticky top-0">
+<header class="z-10 flex bg-green-900 mr-12 pt-12 ml-12 items-center justify-between sticky top-0">
 
 <Drawer.Root direction="left">
 
@@ -41,6 +41,21 @@
 			<MainNav />
 		</Drawer.Close>
 	</DrawerDescription>
+
+	<Drawer.Footer>
+		<a href="/" class="text-base">+7(952)721-25-94
+		</a>
+		<a href="/" class="text-base">AlenaStashevski@gmail.com
+		</a>
+		<a href="/" class="text-base">Югорский тракт, 4, Сургут
+		</a>
+
+		<div class="flex">
+			<img class="h-20 xl:h-10"src="/instagram.svg" alt="instagram">
+			<img class="h-20 xl:h-10" src="/telegram.svg" alt="telegram">
+			<img class="h-20 xl:h-10" src="/whatsapp.svg" alt="whatsapp">
+		</div>
+	</Drawer.Footer>
 
   </Drawer.Content>
 

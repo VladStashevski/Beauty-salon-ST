@@ -4,6 +4,6 @@
 </script>
 
 <!-- Contents of this file will be used in the header and the responsive hamburger menu. -->
-<nav class="text-6xl" class:open={$isMenuOpen}>
+<nav class="text-4xl" class:open={$isMenuOpen}>
 	<NavItems />
 </nav>
