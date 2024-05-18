@@ -1,7 +1,6 @@
 <script lang="ts">
   import * as Carousel from "$lib/components/ui/carousel/index.js";
 
-  // Предположим, что у вас есть массив фотографий
   const images = [
     '/images/hair.webp',
     '/images/hair2.webp',

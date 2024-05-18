@@ -6,7 +6,6 @@
 	export let data
 </script>
 
-
 <svelte:head>
 	<title>Blog</title>
 	<meta data-key="description" name="description" content={siteDescription}>

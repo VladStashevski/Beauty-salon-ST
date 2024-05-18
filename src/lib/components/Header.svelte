@@ -11,7 +11,7 @@
 	}
 </script>
 
-<header class="z-50 flex bg-whihe pr-12 pt-12 pl-12 items-center justify-between sticky top-0">
+<header class="z-50 flex bg-white pr-12 pt-2 pb-2 pl-12 items-center justify-between sticky top-0">
 
 <Drawer.Root direction="left">
 
@@ -43,9 +43,9 @@
 	</DrawerDescription>
 
 	<Drawer.Footer>
-		<a href="/" class="text-base">+7(952)721-25-94
+		<a href="tel:+79527212594" class="text-base">+7(952)721-25-94
 		</a>
-		<a href="/" class="text-base">AlenaStashevski@gmail.com
+		<a href="mailto:AlenaStashevski@gmail.com" class="text-base">AlenaStashevski@gmail.com
 		</a>
 		<a href="/" class="text-base">Югорский тракт, 4, Сургут
 		</a>
@@ -61,7 +61,7 @@
 
 </Drawer.Root>
 
-<a href="/" class="text-5xl text-white">
+<a href="/" class="text-5xl">
 	{siteTitle}
 </a>
 

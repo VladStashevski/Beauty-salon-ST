@@ -7,7 +7,7 @@
 <path d="M44 28.6797V29.6797H0V28.6797H44ZM44 16.6797V17.6797H0V16.6797H44Z" fill="white"/>
 </mask>
 <g mask="url(#mask1_3_723)">
-<path d="M0 16.6797H44V29.6797H0V16.6797Z" fill="white"/>
+<path d="M0 16.6797H44V29.6797H0V16.6797Z" fill="black"/>
 </g>
 </g>
 </svg>

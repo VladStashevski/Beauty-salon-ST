@@ -15,12 +15,15 @@ const config = {
 		},
 		extend: {
 			width: {
-        'custom-info': 'min(800px, 90%)',
+				'custom-info': 'min(800px, 90%)',
 				'custom-aspects': 'min(1300px,90%)',
+				'custom-logo': 'min(1100px,90%)'
       },
 			colors: {
 				border: "hsl(var(--border) / <alpha-value>)",
 				greenMain: "#d1d9cd",
+				greenPatern: "#d4dad2",
+				greenFooter: "#555c53",
 				input: "hsl(var(--input) / <alpha-value>)",
 				ring: "hsl(var(--ring) / <alpha-value>)",
 				background: "hsl(var(--background) / <alpha-value>)",
