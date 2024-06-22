@@ -1,5 +1,5 @@
 <section class="pt-10 pb-10 bg-greenFooter">
-<div class="main-service w-custom-logo ml-auto mr-auto">
+<div class="main-service w-min-90-1100 ml-auto mr-auto">
 
 	<h2 class ="title">Оазис для тех, кто хочет побаловать себя моментом релаксации и оздоровления.</h2>
 		
@@ -9,9 +9,9 @@
 		</div>
 
 	<div class ="images">
-		<div class="image-one"><img src="/static/images/greenBg.webp" alt=""></div>
-		<div class="image-two"><img src="/static/images/kitchen.webp" alt=""></div>
-		<div class="image-three"><img src="/static/images/apart.webp" alt=""></div>
+		<div class="image-one"><img src="/images/greenBG.webp" alt=""></div>
+		<div class="image-two"><img src="/images/kitchen.webp" alt=""></div>
+		<div class="image-three"><img src="/images/apart.webp" alt=""></div>
 	</div>
 
 
@@ -30,13 +30,16 @@
 }
 
 .images{
-	grid-area: images;
-	pointer-events: none;
-  grid-area: images;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  --image-offset: 40%;
-  isolation: isolate;
+	background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 120px 240px 120px;
+    grid-template-rows: 380px;
+    isolation: isolate;
+    /* margin-left: -100px;
+    margin-right: -100px; */
+		--image-offset: 40%;
+		justify-items: center;
 }
 
 .about {

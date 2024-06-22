@@ -1,5 +1,5 @@
 <section class="pt-10 pb-10">
-<div class="w-custom-aspects ml-auto mr-auto mb-5">
+<div class="w-min-90-1300 ml-auto mr-auto mb-5">
 	<div class="grid grid-cols-3">
 		<div class="border-r pt-7 pb-7 pl-14 pr-14 border-greenMain">
 			<article class="text-center">

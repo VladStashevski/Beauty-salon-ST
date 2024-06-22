@@ -15,9 +15,10 @@ const config = {
 		},
 		extend: {
 			width: {
-				'custom-info': 'min(800px, 90%)',
-				'custom-aspects': 'min(1300px,90%)',
-				'custom-logo': 'min(1100px,90%)'
+				'min-90-600': 'min(600px, 90%)',
+				'min-90-800': 'min(800px, 90%)',
+				'min-90-1300': 'min(1300px,90%)',
+				'min-90-1100': 'min(1100px,90%)'
       },
 			colors: {
 				border: "hsl(var(--border) / <alpha-value>)",

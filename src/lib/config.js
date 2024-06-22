@@ -12,7 +12,7 @@ export const siteLink = 'https://github.com/josh-collinsworth/sveltekit-blog-sta
 export const siteAuthor = 'Vlad Stashevski';
 
 // Controls how many posts are shown per page on the main blog index pages
-export const postsPerPage = 4;
+export const postsPerPage = 3;
 
 // Edit this to alter the main nav menu. (Also used by the footer and mobile nav.)
 export const navItems = [

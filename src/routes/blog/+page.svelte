@@ -7,12 +7,17 @@
 </script>
 
 <svelte:head>
-	<title>Blog</title>
+	<title>Мой блог и новости</title>
 	<meta data-key="description" name="description" content={siteDescription}>
 </svelte:head>
 
-<h1>Blog</h1>
+<section>
+	<div class="w-min-90-800 ml-auto mr-auto text-center mb-5 mt-10">
+		<h1>Мой блог и новости</h1>
+		<h2>Ваша красота – наша страсть. Ваше благополучие – наша цель.</h2>
+	</div>
 
-<PostsList posts={data.posts} />
+			<PostsList posts={data.posts} />
 
-<Pagination currentPage={1} totalPosts={data.total} />
+			<Pagination currentPage={1} totalPosts={data.total} />
+</section>

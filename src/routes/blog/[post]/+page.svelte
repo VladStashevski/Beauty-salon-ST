@@ -24,18 +24,18 @@
 
 <article class="post">
 	<!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
+	<h1 class="w-min-90-800 ml-auto mr-auto mb-10">{title}</h1>
+	<div class="">
 	<img
-		class="cover-image"
+		class="w-min-90-800 ml-auto mr-auto"
 		src={coverImage}
 		alt=""
 		style="aspect-ratio: {coverWidth} / {coverHeight};"
-		width={coverWidth}
-		height={coverHeight}
+		width={600}
+		height={600}
 	/>
 
-	<h1>{title}</h1>
-
-	<div class="meta">
+	<div class="w-min-90-600 ml-auto mr-auto">
 		<b>Published:</b>
 		{date}
 		<br />
@@ -43,10 +43,12 @@
 		{updated}
 	</div>
 
+	<div class="w-min-90-600 ml-auto mr-auto">
 	<svelte:component this={PostContent} />
+	</div>
 
 	{#if categories}
-		<aside class="post-footer">
+		<aside class="w-min-90-600 ml-auto mr-auto">
 			<h2>Posted in:</h2>
 			<ul class="post-footer__categories">
 				{#each categories as category}
@@ -59,4 +61,5 @@
 			</ul>
 		</aside>
 	{/if}
+</div>
 </article>

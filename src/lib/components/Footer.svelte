@@ -8,11 +8,11 @@
 
 	<div class="grid gap-10 pb-28 pt-28">
 		
-		<div class="w-custom-logo mr-auto ml-auto">
+		<div class="w-min-90-1100 mr-auto ml-auto">
 			<img class="text-xl"src="/emblem-light.svg" alt="">
 		</div>
 
-	<div class="custom-grid-header w-custom-logo mr-auto ml-auto gap-20">
+	<div class="custom-grid-header w-min-90-1100 mr-auto ml-auto gap-20">
 		<div class="contact flex flex-col">
 			<h3 class="mb-5">Контакты</h3>
 			<div>
@@ -50,7 +50,7 @@
 	</div>
 
 	<div>
-		<div class="flex flex-wrap justify-between w-custom-logo mr-auto ml-auto">
+		<div class="flex flex-wrap justify-between w-min-90-1100 mr-auto ml-auto">
 			<nav >
 				<ul class="flex align-center">
 					<li>
