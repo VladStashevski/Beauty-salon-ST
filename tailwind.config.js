@@ -64,8 +64,8 @@ const config = {
 				sm: "calc(var(--radius) - 4px)"
 			},
 			fontFamily: {
-				custom: ['YourFontName', 'sans'],
-				sans: [...fontFamily.sans]
+				main: ["Tiny5-Regular", "sans-serif"],
+				dance: ["Dance-Regular", "sans-serif"],
 			}
 		}
 	},

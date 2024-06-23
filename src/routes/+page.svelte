@@ -8,7 +8,8 @@
 </script>
 
 <section class="relative bg-cover bg-center h-screen flex flex-col justify-end items-center" style="background-image: url('/images/backgr.webp');">
-	<h3 class="text-xl xl:text-xl text-center font-bold mb-6 text-white">DIVE INTO A <br/> SENSORIAL JOURNEY</h3>
+	<p class=" font-main text-4xl bold">Привет</p>
+	<p class=" font-dance">Привет</p>
 	<div class="flex justify-center items-center mb-6">
 		<img class="h-18 xl:h-18 animate-bounce" src="/arrow.svg" alt="открыть меню навигации">
 	</div>

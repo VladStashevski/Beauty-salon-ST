@@ -3,49 +3,34 @@
 @tailwind utilities;
 
 @layer base {
+	
 	@font-face {
-		font-family: 'Mont-Regular';
-		src: url('/fonts/Mont-Regular.woff2'), format('woff2');
+		font-family: 'Tiny5-Regular';
+		src: url('/fonts/Tiny5-Regular.ttf'), format('truetype');
 		font-display: swap;
 		font-weight: normal;
 		font-style: normal;
 	}
 
 	@font-face {
-		font-family: 'Mont-Bold';
-		src: url('/fonts/Mont-Bold.woff2'), format('woff2');
+		font-family: 'Mpro-Regular';
+		src: url('/fonts/Mpro-Regular.woff2'), format('woff2');
+		font-display: swap;
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'Mpro-Bold';
+		src: url('/fonts/Mpro-Bold.woff2'), format('woff2');
 		font-display: swap;
 		font-weight: bold;
 		font-style: normal;
 	}
 
 	@font-face {
-		font-family: 'Mont-Light';
-		src: url('/fonts/Mont-Light.woff2'), format('woff2');
-		font-display: swap;
-		font-weight: normal;
-		font-style: normal;
-	}
-
-	@font-face {
-		font-family: 'FiraCode-RegularMS';
-		src: url('/fonts/FiraCode-RegularMS.woff2'), format('woff2');
-		font-display: swap;
-		font-weight: normal;
-		font-style: normal;
-	}
-
-	@font-face {
-		font-family: 'FiraCode-BoldMS';
-		src: url('/fonts/FiraCode-BoldMS.woff2'), format('woff2');
-		font-display: swap;
-		font-weight: bold;
-		font-style: normal;
-	}
-
-	@font-face {
-		font-family: 'FiraCode-LightMS';
-		src: url('/fonts/FiraCode-LightMS.woff2'), format('woff2');
+		font-family: 'Dance-Regular';
+		src: url('/fonts/Dance-Regular.woff2'), format('woff2');
 		font-display: swap;
 		font-weight: normal;
 		font-style: normal;
@@ -59,7 +44,8 @@
 		max-width: 100%;
 	}
 
-	main {
+	body {
+		font-family: 'Mpro-Regular';
 	}
 
 	.blur-drawer {

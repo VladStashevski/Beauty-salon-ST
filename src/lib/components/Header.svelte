@@ -86,15 +86,20 @@
   .header-main-page {
     display: flex;
     justify-content: space-between;
-    width: calc(100% - var(--scrollbar-width));
+    /* width: calc(100% - var(--scrollbar-width)); */
+    top: 0;
+    left: 0;
+    right: 0;
     position: fixed;
     top: 0;
     z-index: 50;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-right: 3rem;
-    padding-left: 3rem;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-right: 48px;
+    padding-left: 48px;
     align-items: center;
+    transition: 0.3s;
+    color: white;
   }
 
 	.header-other-page {
@@ -103,11 +108,21 @@
     position: sticky;
     top: 0;
     z-index: 50;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-right: 3rem;
-    padding-left: 3rem;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-right: 48px;
+    padding-left: 48px;
     align-items: center;
 		background: white;
+    transition: 0.3s;
 	}
+
+  .header-scroll-main {
+    background: white;
+    color: black;
+    padding-bottom: 20px;
+    transition: 0.3s;
+    background: white;
+  }
+  
 </style>
