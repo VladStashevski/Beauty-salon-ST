@@ -5,6 +5,6 @@
 	export { className as class };
 </script>
 
-<div bind:this={el} class={cn("flex flex-col gap-2 pl-28", className)} {...$$restProps}>
+<div bind:this={el} class={cn("flex flex-col gap-2 md:pl-28 pl-11", className)} {...$$restProps}>
 	<slot />
 </div>

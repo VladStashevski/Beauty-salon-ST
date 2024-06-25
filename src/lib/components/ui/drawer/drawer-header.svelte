@@ -7,7 +7,7 @@
 
 <div
 	bind:this={el}
-	class={cn("flex justify-between pl-12 text-center pt-12 pb-12 sm:text-left", className)}
+	class={cn("flex md:flex-row flex-row-reverse justify-between pl-12 text-center pt-12 md:pb-12 pb-2 sm:text-left", className)}
 	{...$$restProps}
 >
 	<slot />

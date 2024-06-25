@@ -8,11 +8,11 @@
 			<a href="/about">Все услуги</a>
 		</div>
 
-	<div class ="images">
+	<!-- <div class ="images">
 		<div class="image-one"><img src="/images/greenBG.webp" alt=""></div>
 		<div class="image-two"><img src="/images/kitchen.webp" alt=""></div>
 		<div class="image-three"><img src="/images/apart.webp" alt=""></div>
-	</div>
+	</div> -->
 
 
 </div>
@@ -80,7 +80,7 @@
 	grid-area: title;
 }
 
-.images{
+.images {
 	background-repeat: no-repeat;
     box-sizing: border-box;
     display: grid;

@@ -8,7 +8,7 @@
 
 <DrawerPrimitive.Description
 	bind:el
-	class={cn("pl-20 text-sm text-muted-foreground mb-16", className)}
+	class={cn("md:pl-20 pl-7 text-sm text-muted-foreground md:mb-16 mb-8", className)}
 	{...$$restProps}
 >
 	<slot />

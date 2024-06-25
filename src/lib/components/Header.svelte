@@ -32,20 +32,20 @@
 
 <header class="{scrollPercent > 20 ? 'header-scroll-main' : ''} {$page.url.pathname === '/' ? 'header-main-page' : 'header-other-page'}">
   <Drawer.Root direction="left">
-    <Drawer.Trigger class="flex items-center">
-      <img class="text-white h-11 xl:h-11 mr-6" src="/line.svg" alt="открыть меню навигации">
-      <span>Меню</span>
+    <Drawer.Trigger class="flex items-center actions">
+      <img class="text-white h-11 xl:h-11 md:mr-6 mr-0 ml-0 md:ml-0" src="/line.svg" alt="открыть меню навигации">
+      <span class="md:flex hidden" src="/line.svg" >Меню</span>
     </Drawer.Trigger>
 
     <Drawer.Content>
       <DrawerHeader>
         <Drawer.Close class="flex items-center">
           <img class="h-11 xl:h-11 mr-6" src="/cross.svg" alt="закрыть меню навигации">
-          <span>Закрыть</span>
+          <span class="md:flex hidden">Закрыть</span>
         </Drawer.Close>
         <Drawer.Close>
-          <a on:click|preventDefault={focusMain} class="skip-to-content-link" href="#main">asdasd</a>
-          <a href="/" class="text-5xl pr-20">{siteTitle}</a>
+          <a on:click|preventDefault={focusMain} class="skip-to-content-link" href="#main"></a>
+          <a href="/" class="md:text-5xl text-3xl pr-20">{siteTitle}</a>
         </Drawer.Close>
       </DrawerHeader>
 
@@ -61,17 +61,17 @@
         <a href="/" class="text-base">Югорский тракт, 4, Сургут</a>
 
         <div class="flex">
-          <img class="h-20 xl:h-10" src="/instagram.svg" alt="instagram">
-          <img class="h-20 xl:h-10" src="/telegram.svg" alt="telegram">
-          <img class="h-20 xl:h-10" src="/whatsapp.svg" alt="whatsapp">
+          <img class="h-10 xl:h-6" src="/instagram.svg" alt="instagram">
+          <img class="h-10 xl:h-6" src="/telegram.svg" alt="telegram">
+          <img class="h-10 xl:h-6" src="/whatsapp.svg" alt="whatsapp">
         </div>
       </Drawer.Footer>
     </Drawer.Content>
   </Drawer.Root>
 
-  <a href="/" class="text-5xl ml-auto mr-auto">{siteTitle}</a>
+  <a href="/" class="logo md:text-5xl text-3xl ml-auto mr-auto ">{siteTitle}</a>
 
-  <div class="flex">
+  <div class="flex social">
     <img class="h-6 xl:h-6" src="/instagram.svg" alt="instagram">
     <img class="h-6 xl:h-6" src="/telegram.svg" alt="telegram">
     <img class="h-6 xl:h-6" src="/whatsapp.svg" alt="whatsapp">
@@ -84,7 +84,10 @@
   }
 
   .header-main-page {
-    display: flex;
+    display: grid;
+    width: 100%;
+    grid-template-areas: "actions logo social";
+    grid-template-columns: 100px 1fr 100px;
     justify-content: space-between;
     /* width: calc(100% - var(--scrollbar-width)); */
     top: 0;
@@ -103,7 +106,10 @@
   }
 
 	.header-other-page {
-		display: flex;
+    display: grid;
+    width: 100%;
+    grid-template-areas: " logo social actions";
+    grid-template-columns: 100px 1fr 100px;
     justify-content: space-between;
     position: sticky;
     top: 0;
@@ -124,5 +130,37 @@
     transition: 0.3s;
     background: white;
   }
+
+  .actions {
+	grid-area: actions;
+  }
+
+  .logo {
+	grid-area: logo;
+  }
+
+  .social {
+	grid-area: social;
+  }
+
+
+  @media (max-width: 768px) {
+  .header-main-page {
+    grid-template-columns: 1fr auto auto;
+    gap: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    grid-template-areas: "logo social actions";
+  }
+
+  .header-other-page {
+    grid-template-columns: 1fr auto auto;
+    gap: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    grid-template-areas: "logo social actions";
+  }
+}
+
   
 </style>

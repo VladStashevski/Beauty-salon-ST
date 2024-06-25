@@ -3,7 +3,7 @@
 	import NavItem from './NavItem.svelte';
 </script>
 
-<ul class="items-start gap-4 flex flex-col">
+<ul class="items-start md:gap-4 gap-1 flex flex-col">
 	{#each navItems as page}
 		<NavItem href={page.route}>
 			{page.title}

@@ -15,10 +15,10 @@
 	</div>
 </section>
 <MainInfo/>
-<MainCarousel/>
+<!-- <MainCarousel/> -->
 <MainAspects/>
 <MainService/>
-<MainReviews/>
+<!-- <MainReviews/> -->
 <MainBlog/>
 
 
