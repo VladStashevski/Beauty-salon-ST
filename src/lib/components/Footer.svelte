@@ -50,7 +50,7 @@
 	</div>
 
 	<div>
-		<div class="flex flex-wrap justify-between w-min-90-1100 mr-auto ml-auto">
+		<div class="flex md:flex-row flex-col flex-wrap justify-between w-min-90-1100 mr-auto ml-auto">
 			<nav >
 				<ul class="flex align-center">
 					<li>
@@ -65,7 +65,7 @@
 				</ul>
 			</nav>
 	
-		<div class="text-right">
+		<div class="md:text-right text-left">
 			<p>© All rights reserved</p>
 			<p>
 				design
@@ -85,6 +85,24 @@
   display: grid;
   grid-template-columns: auto 1fr 140px;
   grid-template-areas: "contact opening nav";
+}
+
+@media (max-width: 1280px) {
+  .custom-grid-header {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+			"contact opening"
+			"nav nav";
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-grid-header {
+    grid-template-areas:
+				"contact"
+        "opening"
+        "nav";
+  }
 }
 
 .contact{

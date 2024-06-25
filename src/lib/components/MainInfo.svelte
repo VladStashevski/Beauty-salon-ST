@@ -1,4 +1,4 @@
-<section class="pt-10 pb-10">
+<section class="pb-10">
 	<div class="bg-greenMain pt-10 pb-10">
 	<div class="mb-10">
 <div class="w-min-90-800 mb-10 mt-10 ml-auto mr-auto text-center">
