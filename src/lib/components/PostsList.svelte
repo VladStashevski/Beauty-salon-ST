@@ -2,8 +2,8 @@
 	export let posts = []
 </script>
 
-
-<ul class="posts-list">
+<div class="w-min-90-1100 ml-auto mr-auto" >
+<ul class="grid gap-4 md:grid-cols-3 md:gap-6">
 	{#each posts as post}
 		<li>
 			<article>
@@ -11,17 +11,20 @@
 					<img
 					src={post.coverImage}
 					alt=""
-					width={post.coverWidth}
-					height={post.coverHeight}
+					width={357}
+					height={255}
 					style="ratio: {post.coverWidth} / {post.coverHeight}"
 					/>
 					<h2>
 						{post.title}
 					</h2>
+					<h3>
+						{post.excerpt}
+					</h3>
+					<span>Читать</span>
 				</a>
 			</article>
-
-			<p>{post.excerpt}</p>
 		</li>
 	{/each}
 </ul>
+</div>

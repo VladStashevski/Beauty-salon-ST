@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	
+	@font-face {
+		font-family: 'Tiny5-Regular';
+		src: url('/fonts/Tiny5-Regular.ttf'), format('truetype');
+		font-display: swap;
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'Mpro-Regular';
+		src: url('/fonts/Mpro-Regular.woff2'), format('woff2');
+		font-display: swap;
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'Mpro-Bold';
+		src: url('/fonts/Mpro-Bold.woff2'), format('woff2');
+		font-display: swap;
+		font-weight: bold;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'Dance-Regular';
+		src: url('/fonts/Dance-Regular.woff2'), format('woff2');
+		font-display: swap;
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	*,
+	*:before,
+	*:after {
+		box-sizing: border-box;
+		font-family: inherit;
+		max-width: 100%;
+	}
+
+	body {
+		font-family: 'Mpro-Regular';
+	}
+
+	.blur-drawer {
+		-webkit-transition: opacity 0.5s;
+		transition: opacity 0.5s;
+		-webkit-backdrop-filter: blur(5px);
+		backdrop-filter: blur(5px);
+		pointer-events: none;
+		opacity: 0;
+		background: rgba(0, 0, 0, 0.4);
+	}
+
+	.layout {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: auto 1fr auto;
+		min-height: 100vh;
+	}
+
+
+	.pagination {
+		margin: 0 0 1rem;
+	
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			list-style-type: none;
+			gap: 0.5rem;
+			margin: 0;
+			padding: 0;
+	
+			li {
+				margin: 0;
+			}
+	
+			a {
+				background: var(--lightAccent);
+				text-decoration: none;
+				line-height: 1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 2em;
+				height: 2em;
+				font-family: var(--primaryFont);
+				font-weight: bold;
+				transition: background 0.1s;
+	
+				&:hover {
+					background: var(--accent);
+					color: var(--background);
+				}
+	
+				&[aria-current='true'] {
+					background: var(--accent);
+					color: var(--background);
+					border: 1px solid currentColor;
+				}
+			}
+		}
+	}
+}

@@ -20,12 +20,17 @@
 
 <!-- TODO: this is duplicated across multiple `+page.svelte` files -->
 {#if posts.length}
-	<h1>Posts {lowerBound}–{upperBound} of {totalPosts}</h1>
-	<Pagination currentPage={page} {totalPosts} />
-
+<section>
+	<div class="w-min-90-800 ml-auto mr-auto text-center mb-5 mt-10">
+		<h1>Мой блог и новости</h1>
+		<h2>Ваша красота – наша страсть. Ваше благополучие – наша цель.</h2>
+	</div>
+	
 	<PostsList {posts} />
 
 	<Pagination currentPage={page} {totalPosts} />
+	<!-- <h1>Posts {lowerBound}–{upperBound} of {totalPosts}</h1> -->
+</section>
 {:else}
 	<h1>Oops!</h1>
 
