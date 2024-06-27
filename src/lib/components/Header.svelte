@@ -6,31 +6,14 @@
   import DrawerDescription from './ui/drawer/drawer-description.svelte';
 
   import { page } from '$app/stores';
-  import { onMount } from 'svelte';
 
-  let scrollPercent = 0;
-
-  function handleScroll() {
-    const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    scrollPercent = (scrollTop / docHeight) * 100;
-  }
-
-  onMount(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  });
-
-  const focusMain = () => {
-    const main = document.querySelector('main');
-    main.focus();
-  };
+	// const focusMain = () => {
+	// 	const main = document.querySelector('main');
+	// 	main.focus();
+	// }
 </script>
 
-<header class="{scrollPercent > 20 ? 'header-scroll-main' : ''} {$page.url.pathname === '/' ? 'header-main-page' : 'header-other-page'}">
+<header class="{$page.url.pathname === '/' ? 'header-main-page' : 'header-other-page'}">
   <Drawer.Root direction="left">
     <Drawer.Trigger class="flex items-center actions">
       <img class="text-white h-11 xl:h-11 md:mr-6 mr-0 ml-0 md:ml-0" src="/line.svg" alt="открыть меню навигации">
@@ -44,7 +27,6 @@
           <span class="md:flex hidden">Закрыть</span>
         </Drawer.Close>
         <Drawer.Close>
-          <a on:click|preventDefault={focusMain} class="skip-to-content-link" href="#main"></a>
           <a href="/" class="md:text-5xl text-3xl pr-20">{siteTitle}</a>
         </Drawer.Close>
       </DrawerHeader>
@@ -84,6 +66,9 @@
   }
 
   .header-main-page {
+    /* background-color: rgba(255, 255, 255, 0.057); Более прозрачный белый фон */
+    backdrop-filter: blur(10px); /* Эффект размытия */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.045);
     display: grid;
     width: 100%;
     grid-template-areas: "actions logo social";
@@ -96,19 +81,19 @@
     position: fixed;
     top: 0;
     z-index: 50;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-right: 48px;
     padding-left: 48px;
     align-items: center;
     transition: 0.3s;
-    color: white;
+    color: black;
   }
 
 	.header-other-page {
     display: grid;
     width: 100%;
-    grid-template-areas: " logo social actions";
+    grid-template-areas: "actions logo social";
     grid-template-columns: 100px 1fr 100px;
     justify-content: space-between;
     position: sticky;
@@ -122,14 +107,6 @@
 		background: white;
     transition: 0.3s;
 	}
-
-  .header-scroll-main {
-    background: white;
-    color: black;
-    padding-bottom: 20px;
-    transition: 0.3s;
-    background: white;
-  }
 
   .actions {
 	grid-area: actions;

@@ -11,5 +11,4 @@
 	class={cn("fixed inset-0 z-50 border-1 border-greenMain blur-drawer", className)}
 	{...$$restProps}
 >
-	<slot />
 </DrawerPrimitive.Overlay>
